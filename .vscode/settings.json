@@ -1,4 +1,6 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "cSpell.words": ["linebreak", "millioners", "Pressable"]
+  "cSpell.words": ["linebreak", "millioners", "Pressable", "rneui"],
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": true
 }
