@@ -21,6 +21,7 @@ module.exports = {
     },
     plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
     rules: {
+        '@typescript-eslint/no-unsafe-member-access': 'off',
         indent: ['error', 4],
         'linebreak-style': ['error', 'windows'],
         quotes: ['error', 'single', { avoidEscape: true }],
@@ -28,6 +29,13 @@ module.exports = {
             'error',
             {
                 endOfLine: 'auto',
+                singleQuote: true,
+                parser: 'flow',
+            },
+            {
+                fileInfoOptions: {
+                    withNodeModules: true,
+                },
             },
         ],
         semi: ['error', 'always'],
