@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import IconLibary from 'react-native-vector-icons/MaterialIcons';
 
 import ProfileScreen from './screens/ProfileScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -26,7 +26,7 @@ const AppNavigator: React.FC = () => {
             }
 
             // Return the icon component
-            return <Icon name={iconName} size={size} color={color} />;
+            return <IconLibary name={iconName} size={size} color={color} />;
           },
         })}
       >
