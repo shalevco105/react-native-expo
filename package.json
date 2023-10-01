@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "expo": "^49.0.13",
-    "@expo/webpack-config": "^19.0.0"
-  }
-}
