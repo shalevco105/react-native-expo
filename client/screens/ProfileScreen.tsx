@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, FlatList, Dimensions } from 'react-native'; // Import StyleSheet from 'react-native'
+import { View, StyleSheet, FlatList, Dimensions } from 'react-native'; 
 import { Avatar, Button, Card, Text } from 'react-native-paper';
 import Images from '../components/Images';
 
@@ -31,7 +31,6 @@ const ProfileScreen: React.FC = () => {
 };
 
 const styles = StyleSheet.create({
-  // Import StyleSheet from 'react-native'
   container: {
     flex: 1,
     padding: 16,

@@ -1,0 +1,10 @@
+install: 
+    'npm install'
+run:
+    'npm start'
+    
+    for android - 'a'
+    for web - 'w' ----> if it is not working on yout pc - run instead of npm start - 'expo start --web' (wait a few seconds even if you see errors)
+    for self phone - scan code
+
+

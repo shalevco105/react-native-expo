@@ -31,9 +31,6 @@ const calculateNumColumns = () => {
     return Math.max(Math.floor(screenWidth / minItemWidth), 1);
 };
 
-
-
-
 const Images: React.FC = () => {
     const numColumns = calculateNumColumns();
     const styles = StyleSheet.create({
@@ -65,8 +62,5 @@ const Images: React.FC = () => {
         </View>
     );
 };
-
-
-
 
 export default Images;

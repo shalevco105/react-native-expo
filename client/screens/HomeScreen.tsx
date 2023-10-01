@@ -4,9 +4,7 @@ import ProductList from '../components/ProductList';
 
 const HomeScreen: React.FC = () => {
     return (
-        // <View style={styles.container}>
         <ProductList />
-        // </View>
     );
 };
 
