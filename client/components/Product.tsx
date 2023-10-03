@@ -1,13 +1,15 @@
 import React from "react";
 import { Text, View, StyleSheet } from 'react-native';
-import { Card, Button, Title, Paragraph } from 'react-native-paper';
+import { Card, Button, Title, Paragraph, Avatar, useTheme } from 'react-native-paper';
 import IconLibary from 'react-native-vector-icons/AntDesign';
+import ProductInterface from "../interfaces/ProductInterface";
 
-const Product = (props: any) => {
+const Product = (props: { product: ProductInterface }) => {
     return (
         <Card style={Styles.container}>
-            <Card.Content>
-                <Title>{props.product.title}</Title>
+            <Card.Content style={Styles.userContainer}>
+                <Avatar.Image size={24} source={{ uri: props.product.user.avatar }} style={{ backgroundColor: 'transparent', paddingTop: '0.5%' }} />
+                <Title style={{ paddingLeft: '2%' }}>{props.product.user.name}</Title>
             </Card.Content>
             <Card.Cover source={{
                 uri: props.product.image
@@ -30,6 +32,10 @@ export default Product;
 const Styles = StyleSheet.create({
     container: {
         alignContent: 'center',
-        margin: 37
+        margin: 20
+    },
+    userContainer: {
+        flexDirection: 'row',
+        paddingBottom: '1%'
     },
 })
