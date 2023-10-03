@@ -11,7 +11,8 @@ const ProductList = () => {
                 name: "shalev ",
             },
             image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80",
-            text: "מוצר קטלני אחושרמוטה ממליץ בחום נודר",
+            title: "perfect product",
+            url: 'https://stackoverflow.com/questions/60500705/react-native-vertically-and-horizontally-align-image-and-text-in-same-row'
         },
         {
             user: {
@@ -19,7 +20,8 @@ const ProductList = () => {
                 name: "shalev",
             },
             image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80",
-            text: "מוצר פגז חשמל מת עליו",
+            title: "מוצר פגז חשמל מת עליו",
+            url: 'https://stackoverflow.com/questions/60500705/react-native-vertically-and-horizontally-align-image-and-text-in-same-row'
         },
     ]
 
