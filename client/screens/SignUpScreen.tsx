@@ -16,22 +16,16 @@ const SignupScreen: React.FC = () => {
     return regex.test(email);
   };
 
-  const handleEmailValidation = () => {
-    if (!email) {
-      setEmailError('Email is required');
-    } else if (!isEmailValid(email)) {
-      setEmailError('Invalid email format');
-    } else {
-      setEmailError('');
-    }
-  };
+  const getEmailError = (): string =>
+    !email ? 'Email is required' : !isEmailValid(email) ? 'Invalid email format' : '';
+  ;
 
-  const handleSignUp = () => {
-    handleEmailValidation();
-    console.log(emailError);
-    if(emailError != '') navigation.navigate('Apps' as never);
+  const handleSignUp = (): void => {
+    const emailErrorMessage = getEmailError();
+    setEmailError(emailErrorMessage)
+    if (emailErrorMessage == '') navigation.navigate('Apps' as never);
   };
-
+  
   const handleLoggin = () => {
     navigation.navigate('Logging In' as never);
   };
@@ -40,7 +34,7 @@ const SignupScreen: React.FC = () => {
     <View style={styles.container}>
       <InputField placeholder="full name" onChangeText={(text) => setName(text)} />
       <InputField placeholder="phone number" onChangeText={(text) => setPhoneNumber(text)} />
-      <InputField placeholder="Email" onChangeText={(text) => {setEmail(text); setEmailError('');}} />
+      <InputField placeholder="Email" onChangeText={(text) => { setEmail(text); setEmailError(''); }} />
       {emailError ? <Text style={styles.errorText}>{emailError}</Text> : null}
       <InputField
         placeholder="Password"
