@@ -1,9 +1,7 @@
 import React from 'react';
 import { Image, View, StyleSheet, Dimensions, FlatList } from 'react-native';
 
-import { Avatar, Button, Card, Text } from 'react-native-paper';
-
-const images = [
+export const images = [
   require('../assets/image1.jpg'),
   require('../assets/image2.jpg'),
   require('../assets/image1.jpg'),

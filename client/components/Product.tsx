@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet } from 'react-native';
 import { Card, Button, Title, Paragraph } from 'react-native-paper';
-import IconLibary from 'react-native-vector-icons/AntDesign';
+import IconLibary from 'react-native-vector-icons/MaterialIcons';
 
 const Product = (props: any) => {
     return (
